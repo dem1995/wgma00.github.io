@@ -1,7 +1,8 @@
 ---
 author: admin
+comments: true
+date: 2016-01-14 06:41:39+00:00
 layout: post
-comments:true
 slug: fire-emblem-awakening-apostheosis
 title: Fire Emblem Awakening - Apostheosis
 categories:
