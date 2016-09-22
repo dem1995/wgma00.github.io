@@ -2,6 +2,14 @@
 
 <ul class="social-media">
 
+  {% if site.social.mail %}
+    <li>
+      <a title="{{ site.social.mail }}" 
+         href="mailto:{{site.social.plugdj}}?Subject=Contact" 
+         target="_blank"><i class="fa fa-envelope fa-2x"></i></a>
+    </li>
+  {% endif %}
+
   {% if site.social.github %}
     <li>
       <a title="{{ site.social.github }} on Github" href="https://github.com/{{ site.social.github }}" target="_blank"><i class="fa fa-github fa-2x"></i></a>
@@ -26,9 +34,19 @@
     </li>
   {% endif %}
 
-  {% if site.social.lastfm %}
+  {% if site.social.twitter %}
     <li>
-      <a title="{{ site.social.lastfm }} on Last.fm" href="http://lastfm.com/user/{{ site.social.lastfm }}" target="_blank"><i class="fa fa-lastfm fa-2x"></i></a>
+      <a title="{{ site.social.twitter }}" 
+         href="http://twitter.com/{{ site.social.twitter }}" 
+         target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+    </li>
+  {% endif %}
+
+  {% if site.social.plugdj %}
+    <li>
+      <a title="{{ site.social.plugdj }}" 
+         href="http://plug.dj/@/{{ site.social.plugdj }}" 
+         target="_blank"><i class="fa fa-headphones fa-2x"></i></a>
     </li>
   {% endif %}
 
@@ -37,5 +55,4 @@
       <a title="{{ site.social.rss }} RSS" href="{{ site.baseurl }}/{{ site.social.rss }}" target="_blank"><i class="fa fa-rss fa-2x"></i></a>
     </li>
   {% endif %}
-
 </ul>
